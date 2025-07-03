@@ -3,8 +3,8 @@ spring:
     name: betacom-task
 
   datasource:
-    username: 'myuser'
-    password: 'mypassword'
+    username: 'user'
+    password: 'password'
     url: jdbc:mysql://localhost:3306/betacom
   jpa:
     hibernate:

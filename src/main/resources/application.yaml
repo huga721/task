@@ -1,3 +1,21 @@
 spring:
   application:
     name: betacom-task
+
+  datasource:
+    username: 'myuser'
+    password: 'mypassword'
+    url: jdbc:mysql://localhost:3306/betacom
+  jpa:
+    hibernate:
+      ddl-auto: none
+    database-platform: org.hibernate.dialect.MySQLDialect
+
+  liquibase:
+    change-log: changelog.xml
+    enabled: true
+
+jwt:
+  secret: 'supersecurelongkeyover32characters!!'
+  expiration: 1800000
+
